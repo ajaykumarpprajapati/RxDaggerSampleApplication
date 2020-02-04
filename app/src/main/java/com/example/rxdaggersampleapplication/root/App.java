@@ -2,6 +2,7 @@ package com.example.rxdaggersampleapplication.root;
 
 import android.app.Application;
 
+import com.example.rxdaggersampleapplication.http.ApiModule;
 import com.example.rxdaggersampleapplication.login.LoginModel;
 import com.example.rxdaggersampleapplication.login.LoginModule;
 
@@ -15,7 +16,7 @@ public class App extends Application {
         super.onCreate();
         component = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this))
-                .loginModule(new LoginModule())
+                .apiModule(new ApiModule())
                 .build();
     }
 

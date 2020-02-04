@@ -6,7 +6,7 @@ public class LoginActivityPresenter implements LoginActivityMVP.Presenter {
     private LoginActivityMVP.Model model;
 
 
-    LoginActivityPresenter(LoginActivityMVP.Model model){
+    public LoginActivityPresenter(LoginActivityMVP.Model model){
         this.model = model;
     }
 

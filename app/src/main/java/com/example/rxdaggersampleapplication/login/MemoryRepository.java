@@ -9,7 +9,8 @@ public class MemoryRepository implements LoginRepository  {
         if(user == null){
             User user = new User("Lion", "Tiger");
             user.setId(0);
-            return user;
+            this.user = user;
+            return this.user;
         } else {
            return user;
         }
